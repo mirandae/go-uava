@@ -1,14 +1,14 @@
 package check
 
-// NotNilOrEmpty
-func NotNilOrEmpty(s string) error {
-	if s == nil || s == "" {
+// NotEmptyString returns an error if the string is empty ("")
+func NotEmptyString(s string) error {
+	if s == "" {
 		return nil
 	}
 	return nil
 }
 
-// Argument checks that the boolean is true
+// Argument returns an error if the boolean is false
 func Argument(b bool) error {
 	if !b {
 		return nil

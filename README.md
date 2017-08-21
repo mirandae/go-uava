@@ -7,7 +7,7 @@ Usage Example:
 	
 ~~~~
 func fnDef(arg1 string, arg2 bool) {
-    err := check.Preconditions(check.NotNilOrEmpty(arg1), check.Argument(arg2))
+    err := check.Preconditions(check.NotEmptyString(arg1), check.Argument(arg2))
     if err != nil {
         ...
     }
